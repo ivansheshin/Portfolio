@@ -1,0 +1,17 @@
+.background{
+    width: 1152px;
+    background-color: #EDF7FA;
+    margin: 0 auto;
+}
+.posts{
+    background-color: #FFF;
+    &__content{
+        display: flex;
+        justify-content: space-between;
+    }
+}
+.posts-navigation{
+    display: flex;
+    justify-content: space-between;
+    align-items: baseline;
+}

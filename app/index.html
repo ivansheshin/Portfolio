@@ -12,11 +12,12 @@
 </head>
 
 <body>
-    <style>
-
-    </style>
     <header class="header">
-        <a class="header-logo" aria-label="logo"><svg class="header-svg" width="40px" height="40px" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 14 14"><path d="M 11.92233,0.5 C 12.793646,0.5 13.5,1.206355 13.5,2.0776707 l 0,9.8446583 C 13.5,12.793645 12.793646,13.5 11.92233,13.5 l -9.8446602,0 C 1.2063541,13.5 0.5,12.793645 0.5,11.922329 l 0,-9.8446583 C 0.5,1.206355 1.2063541,0.5 2.0776698,0.5 l 9.8446602,0 z"/></svg></a>
+        <a class="header-logo" aria-label="logo"><svg class="header-svg" width="40px" height="40px"
+                xmlns="http://www.w3.org/2000/svg" viewBox="0 0 14 14">
+                <path
+                    d="M 11.92233,0.5 C 12.793646,0.5 13.5,1.206355 13.5,2.0776707 l 0,9.8446583 C 13.5,12.793645 12.793646,13.5 11.92233,13.5 l -9.8446602,0 C 1.2063541,13.5 0.5,12.793645 0.5,11.922329 l 0,-9.8446583 C 0.5,1.206355 1.2063541,0.5 2.0776698,0.5 l 9.8446602,0 z" />
+                </svg></a>
         <ul class="header-nav-list">
             <li class="header-nav-list__item"><a class="header-nav-list__link" href="blog.html">Blog</a></li>
             <li class="header-nav-list__item"><a class="header-nav-list__link" href="work.html">Works</a></li>
@@ -25,36 +26,45 @@
     </header>
     <main class="index-container">
         <section class="resume">
-            <div>
-                <h2 class="resume__title">Hi, I am John, Creative Technologist </h2>
+            <div class="resume__content">
+                <h2 class="resume__title">Hi, I am John,</br> Creative Technologist </h2>
                 <p class="resume__paragraph">Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint.
                     Velit officia consequat duis enim velit mollit. Exercitation veniam consequat sunt nostrud amet.</p>
-                <a href="#" class="resume__link">Download Resume</a>
+                <button class="resume__button">Download Resume</button>
             </div>
-            <img class="resume__img">
+            <img class="resume__img" src="./images/avatar.png" width="243" height="243">
         </section>
         <section class="posts">
             <div class="posts-navigation">
                 <h2 class="posts-navigation__title">Recent posts</h2>
                 <a href="#" class="posts-navigation__link">View all</a>
             </div>
-            <div class="posts__item">
-                <h3 class="posts__header">Making a design system from scratch</h3>
-                <div class="posts__desc">
-                    <p class="posts__date">12 Feb 2020</p>
-                    <p class="posts__type">Design, Pattern</p>
+            <div class="background">
+                <div class="posts__content">
+
+                    <div class="posts__item">
+                        <h3 class="posts__header">Making a design system from scratch</h3>
+                        <div class="posts__desc">
+                            <p class="posts__date">12 Feb 2020</p>
+                            <p class="posts__type">Design, Pattern</p>
+                        </div>
+                        <p class="posts__text">Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint.
+                            Velit
+                            officia consequat duis enim velit mollit. Exercitation veniam consequat sunt nostrud amet.
+                        </p>
+                    </div>
+                    <div class="posts__item">
+                        <h3 class="posts__header">Creating pixel perfect icons in Figma</h3>
+                        <div class="posts__desc">
+                            <p class="posts__date">12 Feb 2020</p>
+                            <p class="posts__type">Figma, Icon Design</p>
+                        </div>
+                        <p class="posts__text">Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint.
+                            Velit
+                            officia consequat duis enim velit mollit. Exercitation veniam consequat sunt nostrud amet.
+                        </p>
+                    </div>
                 </div>
-                <p class="posts__text">Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. Velit
-                    officia consequat duis enim velit mollit. Exercitation veniam consequat sunt nostrud amet.</p>
-            </div>
-            <div class="posts__item" >
-                <h3 class="posts__header"></h3>
-                <div class="posts__desc">
-                    <p class="posts__date">12 Feb 2020</p>
-                    <p class="posts__type">Figma, Icon Design</p>
-                </div>
-                <p class="posts__text">Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. Velit
-                    officia consequat duis enim velit mollit. Exercitation veniam consequat sunt nostrud amet.</p>
             </div>
         </section>
         <section class="works">
@@ -68,7 +78,9 @@
                             <span class="works__data">2020</span>
                             <span class="works__type">Dashboard</span>
                         </div>
-                        <p class="works__text">Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. Velit officia consequat duis enim velit mollit. Exercitation veniam consequat sunt nostrud amet.</p>
+                        <p class="works__text">Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint.
+                            Velit officia consequat duis enim velit mollit. Exercitation veniam consequat sunt nostrud
+                            amet.</p>
                     </div>
                 </a>
             </div>
@@ -81,7 +93,9 @@
                             <span class="works__data">2020</span>
                             <span class="works__type">Dashboard</span>
                         </div>
-                        <p class="works__text">Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. Velit officia consequat duis enim velit mollit. Exercitation veniam consequat sunt nostrud amet.</p>
+                        <p class="works__text">Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint.
+                            Velit officia consequat duis enim velit mollit. Exercitation veniam consequat sunt nostrud
+                            amet.</p>
                     </div>
                 </a>
             </div>
@@ -94,11 +108,13 @@
                             <span class="works__data">2020</span>
                             <span class="works__type">Dashboard</span>
                         </div>
-                        <p class="works__text">Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. Velit officia consequat duis enim velit mollit. Exercitation veniam consequat sunt nostrud amet.</p>
+                        <p class="works__text">Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint.
+                            Velit officia consequat duis enim velit mollit. Exercitation veniam consequat sunt nostrud
+                            amet.</p>
                     </div>
                 </a>
             </div>
-            
+
 
         </section>
     </main>

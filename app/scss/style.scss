@@ -1,17 +1,26 @@
 @import 'header.scss';
 @import 'resume.scss';
+@import 'posts.scss';
+
 
 
 body {
     font-family: 'Heebo', sans-serif;
-    width: 1152px;
-    margin: 0 auto;
+    font-size: 16px;
+    max-width: 1152px;
     padding: 0;
+    margin: 0 auto;
+    box-sizing: border-box;
 }
+.background{
+    max-width: 1152px;
+}
+
 
 .index-container {
     width: 74%;
     margin: 0 auto;
+
 }
 
 ul {
