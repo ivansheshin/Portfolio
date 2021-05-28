@@ -1,19 +1,24 @@
 @import 'header.scss';
 @import 'resume.scss';
 @import 'posts.scss';
+@import 'works.scss';
 
 
 
 body {
     font-family: 'Heebo', sans-serif;
     font-size: 16px;
+    line-height: 24px;
     max-width: 1152px;
     padding: 0;
     margin: 0 auto;
     box-sizing: border-box;
     color: #21243D;
 }
-
+img{
+    max-width: 100%;
+    height: auto;
+}
 .index-container {
     width: 74%;
     margin: 0 auto;

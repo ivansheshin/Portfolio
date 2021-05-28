@@ -9,6 +9,10 @@
     &__content{
         display: flex;
         justify-content: space-between;
+        gap: 20px;
+
+        // align-self: center;
+        // justify-self: center;
     }
     &-navigation__title{
         font-size: 22px;
@@ -17,11 +21,10 @@
     }
     &__item{
         background-color: #FFF;
-        margin-right: 20px;
         padding: 24px 21px 35px 23px;
-    }
-    &__item:last-child{
-        margin-right: 0;
+        align-self: center;
+        justify-self: center;
+
     }
     &__desc{
         display: flex;
