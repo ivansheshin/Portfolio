@@ -6,6 +6,14 @@
         margin-bottom: 46px;
         position: relative;
     }
+    &_second {
+        margin-bottom: 66px;
+        position: relative;
+    }
+    &_third{
+        position: relative;
+    }
+
     &_first::after{
         position: absolute;
         content: "";
@@ -14,12 +22,9 @@
         height: 2px;
         background-color: #E0E0E0;
     }
-
-    &_second {
-        margin-bottom: 66px;
-        position: relative;
-    }
-    &_second::after{
+    
+    &_second::after,
+    &_third::after{
         position: absolute;
         content: "";
         top: 215px;
