@@ -2,10 +2,17 @@
     display: flex;
     gap: 35px;
     justify-content: center;
+    margin-bottom: 26px;
+}
+.footer-navigation__svg:hover path,
+.footer-navigation__svg:focus path{
+    fill: var(--orange-color);
+    transition: .3s;
 }
 
 .footer__copyright {
     display: flex;
     justify-content: center;
     gap: 5px;
+    padding-bottom: 54px;
 }

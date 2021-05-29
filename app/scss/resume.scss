@@ -19,12 +19,13 @@
         font-size: 20px;
         padding: 7px 19px;
         color: #FFF;
-        background-color: rgba(255, 100, 100, 1);
+        background-color: var(--orange-color);
         border: 0;
     }
     &__button:hover,
     &__button:focus{
-        background-color: rgba(255, 100, 100, .7);
+        background-color: var(--orange-color);
+        opacity: .7;
         transition: .5s;
     }
     &__img:hover,

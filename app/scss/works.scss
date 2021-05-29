@@ -1,3 +1,6 @@
+@import 'variables&mixins.scss';
+
+
 .works {
     margin-bottom: 115px;
 
@@ -23,9 +26,7 @@
             position: absolute;
             content: "";
             top: 194px;
-            width: 100%;
-            height: 2px;
-            background-color: #E0E0E0;
+            @include gray-line;
         }
 
         &_second::after,
@@ -33,15 +34,14 @@
             position: absolute;
             content: "";
             top: 215px;
-            width: 100%;
-            height: 2px;
-            background-color: #E0E0E0;
+            @include gray-line;
         }
     }
 
     &__image {
         width: 246px;
         height: 180px;
+        cursor: pointer;
     }
 
     &__title {
@@ -52,6 +52,7 @@
     &__title,
     &__text {
         margin: 0;
+        cursor: pointer;
     }
 
     &__info {
@@ -66,13 +67,17 @@
         margin-right: 36px;
         padding: 5px;
         color: #fff;
-        background-color: #142850;
+        background-color: var(--data-color);
         border-radius: 16px;
     }
 
     &__type {
         font-size: 20px;
         line-height: 29px;
-        color: #8695A4;
+        color: var(--type-color);
+
+    }
+    &__link{
+        cursor: default;
     }
 }

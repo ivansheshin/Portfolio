@@ -12,4 +12,9 @@
 .header-nav-list{
     display: flex;
     gap: 36px;
+    &__link:hover,
+    &__link:focus {
+        color: var(--orange-color);
+        transition: .3s;
+    }
 }

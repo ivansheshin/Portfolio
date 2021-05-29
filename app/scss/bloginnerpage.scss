@@ -1,0 +1,61 @@
+@import 'variables&mixins.scss';
+
+.blog {
+    width: 59%;
+    margin: 0 auto;
+    margin-bottom: 104px;
+    &__link{
+        cursor: default;
+    }
+    &__header {
+        font-size: 44px;
+        line-height: 60px;
+        font-weight: 700;
+    }
+
+    &__title {
+        font-size: 30px;
+        line-height: 44px;
+        cursor: pointer;
+    }
+    &__text{
+        cursor: pointer;
+    }
+
+    &__item {
+        position: relative;
+    }
+
+    &__item::after {
+        position: absolute;
+        content: "";
+        top: 174px;
+        @include gray-line;
+    }
+
+}
+
+.description {
+    font-size: 20px;
+
+    &__date {
+        margin-right: 47px;
+        position: relative;
+    }
+
+    &__date::after {
+        content: "";
+        position: absolute;
+        width: 1px;
+        height: 21px;
+        background-color: #000;
+
+        top: 4px;
+        left: 135px;
+
+    }
+
+    &__type {
+        color: var(--type-color);
+    }
+}
