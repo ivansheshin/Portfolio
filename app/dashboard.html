@@ -13,7 +13,7 @@
 
 <body>
     <header class="header">
-        <a class="header-logo" aria-label="logo">
+        <a class="header-logo" aria-label="logo" href="index.html">
             <svg class="header-svg" width="40px" height="40px" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 14 14">
                 <path
                     d="M 11.92233,0.5 C 12.793646,0.5 13.5,1.206355 13.5,2.0776707 l 0,9.8446583 C 13.5,12.793645 12.793646,13.5 11.92233,13.5 l -9.8446602,0 C 1.2063541,13.5 0.5,12.793645 0.5,11.922329 l 0,-9.8446583 C 0.5,1.206355 1.2063541,0.5 2.0776698,0.5 l 9.8446602,0 z" />
@@ -26,21 +26,24 @@
             <li class="header-nav-list__item"><a class="header-nav-list__link" href="#">Contact</a></li>
         </ul>
     </header>
-    <main class="project1">
-        <h2 class="project1__header">Designing Dashboards with usability in mind</h2>
-        <div class="project1__desc">
-            <span class="project1__date">2020</span>
-            <span>Dashboard, User Experience Design</span>
+    <main class="dashboard">
+        <h2 class="dashboard__header">Designing Dashboards with </br> usability in mind</h2>
+        <div class="dashboard__desc">
+            <span class="dashboard__date">2020</span>
+            <span class="dashboard__type">Dashboard, User Experience Design</span>
         </div>
-        <p class="project1__text">Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. Velit
+        <p class="dashboard__text">Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. Velit
             officia consequat duis enim velit mollit. Exercitation veniam consequat sunt nostrud amet.</p>
-        <img class="project1__first-image" alt="">
-        <h3>Heading 1</h3>
-        <h4>Heading 2</h4>
+            <picture>
+                <source @media="(max-width: 375px)" srcset="./images/Rectangle 4.png">
+                <img class="dashboard__first-image" alt="Interface" src="./images/Rectangle 4@2x.png" width="681" height="460">
+            </picture>
+        <h3 class="heading-one">Heading 1</h3>
+        <h4 class="heading-two">Heading 2</h4>
         <p>Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. Velit officia consequat duis enim
             velit mollit. Exercitation veniam consequat sunt nostrud amet.</p>
-        <img class="project1__second-image" alt="">
-        <img class="project1__thirst-image" alt="">
+        <img class="dashboard__second-image" alt="car" src="./images/Rectangle 5.png" width="681" height="460">
+        <img class="dashboard__thirst-image" alt="interface" src="./images/Rectangle 6.png" width="681" height="460">
     </main>
     <footer class="index-container">
         <div class="footer-navigation">

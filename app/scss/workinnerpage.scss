@@ -1,70 +1,71 @@
 @import 'variables&mixins.scss';
 
+.work-list {
+    width: 59%;
+    margin: 90px auto 160px;
 
-.works {
-    margin-bottom: 115px;
+}
+
+.sample-works {
     display: flex;
     flex-direction: column;
-    gap: 56px;
+    gap: 90px;
+
+    &__link {
+        cursor: default;
+        color: inherit;
+    }
 
     &__content {
         display: flex;
         gap: 18px;
-
-        &_first {
-            position: relative;
-        }
-
-        &_second {
-            position: relative;
-        }
-
-        &_third {
-            position: relative;
-        }
+        position: relative;
 
         &_first::after {
             position: absolute;
             content: "";
-            top: 194px;
+            top: 220px;
             @include gray-line;
         }
 
-        &_second::after,
-        &_third::after {
+        &_second::after {
             position: absolute;
             content: "";
-            top: 194px;
+            top: 220px;
             @include gray-line;
         }
-    }
 
-    &__image {
-        width: 246px;
-        height: 180px;
-        cursor: pointer;
+        &_thirst::after {
+            position: absolute;
+            content: "";
+            top: 220px;
+            @include gray-line;
+        }
+
+        &_fourth::after {
+            position: absolute;
+            content: "";
+            top: 220px;
+            @include gray-line;
+        }
+
     }
 
     &__title {
         font-size: 30px;
         line-height: 44px;
-    }
 
-    &__title,
-    &__text {
+        font-weight: 700;
         margin: 0;
+
         cursor: pointer;
     }
 
-    &__info {
-        display: flex;
-        align-items: center;
-        margin: 15px 0;
-    }
-
-    &__data {
+    &__date {
+        display: inline-block;
         font-size: 18px;
         line-height: 18px;
+
         font-weight: 700;
         margin-right: 36px;
         padding: 5px;
@@ -77,9 +78,12 @@
         font-size: 20px;
         line-height: 29px;
         color: var(--type-color);
+    }
+    &__text{
+        cursor: pointer;
+    }
+    &__image{
+        cursor: pointer;
+    }
 
-    }
-    &__link{
-        cursor: default;
-    }
 }
