@@ -35,3 +35,20 @@
     }
 
 }
+@media(max-width: 1152px){
+    .resume{
+        flex-direction: column-reverse;
+        width: 83%;
+        // margin: 0 auto;
+        // &__content{
+
+        // }
+    }
+    &__title{
+        font-size: 32px;
+        line-height: 40px;
+        text-align: center;
+    }
+    
+
+}

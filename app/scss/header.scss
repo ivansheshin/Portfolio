@@ -1,4 +1,5 @@
-.header{
+
+.header-navigation{
     display: flex;
     justify-content: space-between;
     padding: 3% 5%;
@@ -17,4 +18,43 @@
         color: var(--orange-color);
         transition: .3s;
     }
+}
+.header-button{
+    display: none;
+}
+@media (max-width: 1152px){
+    .header{
+
+        max-width: 100%;
+    }
+
+    .header-nav-list{
+        display: none;
+    }
+    .header-button{
+        display: block;
+        width: 1px;
+        height: 1px;
+        margin: -1;
+        padding: 0;
+
+        outline: none;
+        border: none;
+
+        position: relative;
+
+    }
+
+    .header-button::after{   
+        position: absolute;
+        content: "";
+        top: 5px;
+        right: 18px;
+        width: 30px;
+        height: 2px;
+        background-color: #000;
+
+        box-shadow: 0 9px 0 0 #000, 0 18px 0 0 #000;
+    }
+
 }
