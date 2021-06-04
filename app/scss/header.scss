@@ -2,14 +2,14 @@
 .header-navigation{
     display: flex;
     justify-content: space-between;
-    padding: 3% 5%;
+    padding: 27px 5%;
     font-size: 20px;
     font-weight: 500;
     &-svg{
         fill: #000;
     }
-
 }
+
 .header-nav-list{
     display: flex;
     gap: 36px;
@@ -22,39 +22,63 @@
 .header-button{
     display: none;
 }
-@media (max-width: 1152px){
-    .header{
 
-        max-width: 100%;
-    }
+@media (max-width: 480px){
 
     .header-nav-list{
         display: none;
     }
     .header-button{
         display: block;
-        width: 1px;
-        height: 1px;
-        margin: -1;
-        padding: 0;
 
-        outline: none;
+        width: 30px;
+        height: 30px;
+        margin-top: -15px;
+        margin-right: -3px;
+        background-color: transparent;
         border: none;
 
-        position: relative;
-
+        overflow: hidden;
     }
-
-    .header-button::after{   
-        position: absolute;
+    .header-button::after{
         content: "";
-        top: 5px;
-        right: 18px;
+        position: absolute;
+
+        background-color: #000;
         width: 30px;
         height: 2px;
-        background-color: #000;
 
-        box-shadow: 0 9px 0 0 #000, 0 18px 0 0 #000;
+        top: 20px;
+        right: 18px;
+
+        box-shadow: 0 9px, 0 18px;
     }
-
+    .header-logo{
+        position: absolute;
+        top: 20px;
+        left: 18px;
+    }
+    .header-navigation{
+        margin-bottom: 33px;
+        justify-content: flex-end;
+    }
+    .header-nav-list{
+        position: absolute;
+        display: none;
+        flex-direction: column;
+        font-size: 16px;
+        top: 13px;
+        right: 18px;
+        width: 20%;
+        
+        &__item{
+            border-bottom: 1px solid #e0e0e0;
+        }
+    }
+        .open {
+            display: block;
+        }
+        .close{
+            display: none;
+        }
 }

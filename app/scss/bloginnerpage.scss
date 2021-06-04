@@ -4,9 +4,6 @@
     width: 59%;
     margin: 0 auto;
     margin-bottom: 104px;
-    &__link{
-        cursor: default;
-    }
     &__header {
         font-size: 44px;
         line-height: 60px;
@@ -16,21 +13,11 @@
     &__title {
         font-size: 30px;
         line-height: 44px;
-        cursor: pointer;
     }
-    &__text{
-        cursor: pointer;
-    }
-
     &__item {
         position: relative;
-    }
-
-    &__item::after {
-        position: absolute;
-        content: "";
-        top: 174px;
-        @include gray-line;
+        padding-bottom: 10px;
+        border-bottom: 1px solid #e0e0e0;
     }
 
 }
@@ -57,5 +44,23 @@
 
     &__type {
         color: var(--type-color);
+    }
+}
+@media (max-width: 480px){
+    .blog{
+        width: 90%;
+        &__header {
+            font-size: 30px;
+        }
+        &__title {
+            font-size: 26px;
+        }
+
+    }
+}
+@media (min-width: 480px) and (max-width: 899px){
+    .blog{
+        width: 74%;
+        
     }
 }
