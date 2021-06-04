@@ -24,7 +24,9 @@
 }
 
 @media (max-width: 480px){
-
+    .header{
+        padding-bottom: 40px;
+    }
     .header-nav-list{
         display: none;
     }
