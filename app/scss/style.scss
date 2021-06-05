@@ -1,13 +1,13 @@
-@import 'header.scss';
-@import 'resume.scss';
-@import 'posts.scss';
-@import 'works.scss';
-@import 'footer.scss';
-@import 'bloginnerpage.scss';
-@import 'workinnerpage.scss';
-@import 'dashboard.scss';
+@import './BEM/header.scss';
+@import './BEM/resume.scss';
+@import './BEM/posts.scss';
+@import './BEM/works.scss';
+@import './BEM/footer.scss';
+@import './BEM/bloginnerpage.scss';
+@import './BEM/workinnerpage.scss';
+@import './BEM/dashboard.scss';
 
-@import 'variables.scss';
+@import './Variables/variables.scss';
 
 body {
     font-family: 'Heebo', sans-serif;

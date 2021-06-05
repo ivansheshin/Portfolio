@@ -22,8 +22,14 @@
 .header-button{
     display: none;
 }
+.header-nav-list__link_end{
+    display: none;
+}
 
 @media (max-width: 480px){
+    .header-nav-list__link_end{
+        display: block;
+    }
     .header-nav-list{
         display: none;
     }
