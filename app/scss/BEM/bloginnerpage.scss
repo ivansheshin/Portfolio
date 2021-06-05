@@ -1,4 +1,3 @@
-@import 'variables&mixins.scss';
 
 .blog {
     width: 59%;
@@ -17,7 +16,7 @@
     &__item {
         position: relative;
         padding-bottom: 10px;
-        border-bottom: 1px solid #e0e0e0;
+        border-bottom: 1px solid var(--line-color);
     }
 
 }

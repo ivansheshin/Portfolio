@@ -1,44 +1,46 @@
-@import 'variables&mixins.scss';
+.work-list {
+    width: 59%;
+    margin: 90px auto 160px;
 
+}
 
-.works {
-    margin-bottom: 115px;
+.sample-works {
     display: flex;
     flex-direction: column;
-    gap: 56px;
+    gap: 90px;
+    &__header{
+        font-size: 44px;
+    }
+    &__link {
+        cursor: default;
+        color: inherit;
+    }
 
     &__content {
         display: flex;
         gap: 18px;
-        padding-bottom: 15px;
-        border-bottom: 2px solid #E0E0E0;
-    }
+        position: relative;
 
-    &__image {
-        width: 246px;
-        height: 180px;
+        padding-bottom: 15px;
+        border-bottom: 1px solid var(--line-color);
+
     }
 
     &__title {
         font-size: 30px;
         line-height: 44px;
-    }
 
-    &__title,
-    &__text {
+        font-weight: 700;
         margin: 0;
 
+        cursor: pointer;
     }
 
-    &__info {
-        display: flex;
-        align-items: center;
-        margin: 15px 0;
-    }
-
-    &__data {
+    &__date {
+        display: inline-block;
         font-size: 18px;
         line-height: 18px;
+
         font-weight: 700;
         margin-right: 36px;
         padding: 5px;
@@ -51,29 +53,35 @@
         font-size: 20px;
         line-height: 29px;
         color: var(--type-color);
-
     }
+
+    &__image{
+        width: 246px;
+        height: 180px;
+    }
+
 }
 @media (max-width: 480px){
-    .works__content{
-        flex-direction: column;
-        margin: 0 15px;
+    .work-list{
+        width: 90%;
     }
-    .works__image{
-        max-width: 100%;
+    .sample-works__content{
+        flex-direction: column;
+    }
+    .sample-works__image{
+        width: 339px;
         height: auto;
         margin: 0 auto;
-
     }
-    .works__header{
-        text-align: center;
-        font-weight: 500;
-        font-size: 18px;
+    .sample-works__header{
+        font-size: 30px;
+    }
+    .sample-works__title{
+        font-size: 24px;
     }
 }
 @media (min-width: 480px) and (max-width: 899px){
-    .works__content{
-       margin: 0 15px; 
+    .work-list{
+        width: 76%;
     }
-    
 }
