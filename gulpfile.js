@@ -5,7 +5,8 @@ const browserSync                    = require('browser-sync').create();
 const uglify                         = require('gulp-uglify-es').default;
 const autoprefixer                   = require('gulp-autoprefixer');
 const imagemin                       = require ('gulp-imagemin');
-const del                            = require('del')
+const del                            = require('del');
+const glob                           = require ('gulp-sass-glob');
 
 function browsersync() {
     browserSync.init({
@@ -39,6 +40,7 @@ function cleanDist (){
 
 function styles() {
     return src('app/scss/style.scss')
+        .pipe(glob())
         .pipe(scss({outputStyle: 'compressed'}))
         .pipe(concat('style.min.css'))
         .pipe(autoprefixer({
