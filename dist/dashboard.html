@@ -4,9 +4,9 @@
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
-    <title>Portfolio</title>
-    <link rel="stylesheet" href="dist/css/style.min.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dashboard</title>
+    <link rel="stylesheet" href="css/style.min.css">
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Heebo:wght@400;500;700&display=swap" rel="stylesheet">
 </head>
@@ -14,122 +14,39 @@
 <body>
     <header class="header">
         <div class="header-navigation">
-        <a class="header-logo" aria-label="logo" href="#"><svg class="header-svg" width="40px" height="40px"
+        <a class="header-logo" aria-label="logo" href="index.html"><svg class="header-svg" width="40px" height="40px"
                 xmlns="http://www.w3.org/2000/svg" viewBox="0 0 14 14">
                 <path
                     d="M 11.92233,0.5 C 12.793646,0.5 13.5,1.206355 13.5,2.0776707 l 0,9.8446583 C 13.5,12.793645 12.793646,13.5 11.92233,13.5 l -9.8446602,0 C 1.2063541,13.5 0.5,12.793645 0.5,11.922329 l 0,-9.8446583 C 0.5,1.206355 1.2063541,0.5 2.0776698,0.5 l 9.8446602,0 z" />
             </svg></a>
+            <button class="header-button"></button>
         <ul class="header-nav-list">
+            <li class="header-nav-list__item"><a class="header-nav-list__link" href="index.html">Home</a></li>
             <li class="header-nav-list__item"><a class="header-nav-list__link" href="blog.html">Blog</a></li>
             <li class="header-nav-list__item"><a class="header-nav-list__link" href="work.html">Works</a></li>
             <li class="header-nav-list__item"><a class="header-nav-list__link" href="#">Contact</a></li>
         </ul>
-        <button class="header-button"></button>
     </div>
     </header>
-    <div class="index-container">
-        <section class="resume">
-            <div class="resume__content">
-                <h2 class="resume__title">Hi, I am John,</br> Creative Technologist </h2>
-                <p class="resume__paragraph">Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint.
-                    Velit officia consequat duis enim velit mollit. Exercitation veniam consequat sunt nostrud amet.</p>
-                <button class="resume__button">Download Resume</button>
-            </div>
-            <img class="resume__img" src="./images/avatar.png" width="243" height="243" alt="avatar">
-        </section>
-    </div>
-    <div class="background">
-        <section class="posts">
-            <div class="posts-navigation">
-                <h2 class="posts-navigation__title">Recent posts</h2>
-                <a href="#" class="posts-navigation__link">View all</a>
-            </div>
-            <div class="posts__content">
-
-                <div class="posts__item">
-                    <h3 class="posts__header">Making a design system from scratch</h3>
-                    <div class="posts__desc">
-                        <p class="posts__date">12 Feb 2020</p>
-                        <p class="posts__type">Design, Pattern</p>
-                    </div>
-                    <p class="posts__text">Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint.
-                        Velit
-                        officia consequat duis enim velit mollit. Exercitation veniam consequat sunt nostrud amet.
-                    </p>
-                </div>
-                <div class="posts__item">
-                    <h3 class="posts__header">Creating pixel perfect icons in Figma</h3>
-                    <div class="posts__desc">
-                        <p class="posts__date">12 Feb 2020</p>
-                        <p class="posts__type">Figma, Icon Design</p>
-                    </div>
-                    <p class="posts__text">Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint.
-                        Velit
-                        officia consequat duis enim velit mollit. Exercitation veniam consequat sunt nostrud amet.
-                    </p>
-                </div>
-            </div>
-        </section>
-    </div>
-    <div class="index-container">
-        <h2 class="works__header">Featured works</h2>
-        <section class="works">
-            <a class="works__link" href="dashboard.html" aria-label="work's page">
-                <div class="works__content works__content_first">
-
-                    <img class="works__image" alt="dashboard" src="./images/dashboard.png" width="246" height="180">
-                    <div class="works__text-content">
-                        <h3 class="works__title">Designing Dashboards</h3>
-                        <div class="works__info">
-                            <span class="works__data">2020</span>
-                            <span class="works__type">Dashboard</span>
-                        </div>
-                        <p class="works__text">Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint.
-                            Velit officia consequat duis enim velit mollit. Exercitation veniam consequat sunt nostrud
-                            amet.</p>
-                    </div>
-
-                </div>
-            </a>
-            <a class="works__link" href="#" aria-label="work's page">
-                <div class="works__content works__content_second">
-
-                    <img class="works__image" alt="girl's portrait" src="./images/portrait.png" width="246"
-                        height="180">
-                    <div class="works__text-content">
-                        <h3 class="works__title">Vibrant Portraits of 2020</h3>
-                        <div class="works__info">
-                            <span class="works__data">2018</span>
-                            <span class="works__type">Illustration</span>
-                        </div>
-                        <p class="works__text">Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint.
-                            Velit officia consequat duis enim velit mollit. Exercitation veniam consequat sunt nostrud
-                            amet.</p>
-                    </div>
-
-                </div>
-            </a>
-            <a class="works__link" href="#" aria-label="work's page">
-                <div class="works__content works__content_third">
-
-                    <img class="works__image" alt="malayalam" src="./images/malayalam.png" width="246" height="180">
-                    <div class="works__text-content">
-                        <h3 class="works__title">36 Days of Malayalam type</h3>
-                        <div class="works__info">
-                            <span class="works__data">2018</span>
-                            <span class="works__type">Typography</span>
-                        </div>
-                        <p class="works__text">Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint.
-                            Velit officia consequat duis enim velit mollit. Exercitation veniam consequat sunt nostrud
-                            amet.</p>
-                    </div>
-
-                </div>
-            </a>
-
-
-        </section>
-    </div>
+    <main class="dashboard">
+        <h2 class="dashboard__header">Designing Dashboards with usability in mind</h2>
+        <div class="dashboard__desc">
+            <span class="dashboard__date">2020</span>
+            <span class="dashboard__type">Dashboard, User Experience Design</span>
+        </div>
+        <p class="dashboard__text">Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. Velit
+            officia consequat duis enim velit mollit. Exercitation veniam consequat sunt nostrud amet.</p>
+            <picture>
+                <source @media="(max-width: 375px)" srcset="./images/Rectangle 4.png">
+                <img class="dashboard__first-image" alt="Interface" src="./images/Rectangle 4@2x.png" width="681" height="460">
+            </picture>
+        <h3 class="heading-one">Heading 1</h3>
+        <h4 class="heading-two">Heading 2</h4>
+        <p>Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. Velit officia consequat duis enim
+            velit mollit. Exercitation veniam consequat sunt nostrud amet.</p>
+        <img class="dashboard__second-image" alt="car" src="./images/Rectangle 5.png" width="681" height="460">
+        <img class="dashboard__thirst-image" alt="interface" src="./images/Rectangle 6.png" width="681" height="460">
+    </main>
     <footer class="index-container">
         <div class="footer-navigation">
             <ul class="footer-navigation__list">
@@ -175,8 +92,7 @@
             <span>All rights reserved</span>
         </div>
     </footer>
-
-    <script src="/dist/js/main.min.js"></script>
+    <script src="js/main.min.js"></script>
 </body>
 
 </html>
