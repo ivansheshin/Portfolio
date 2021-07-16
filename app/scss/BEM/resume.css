@@ -1,0 +1,64 @@
+.resume {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-bottom: 88px;
+}
+
+.resume__title {
+  font-size: 44px;
+  line-height: 60px;
+  font-weight: 700;
+}
+
+.resume__paragraph {
+  margin-bottom: 38px;
+}
+
+.resume__button {
+  font: inherit;
+  font-size: 20px;
+  padding: 7px 19px;
+  color: #FFF;
+  background-color: var(--orange-color);
+  border: 0;
+}
+
+.resume__button:hover, .resume__button:focus {
+  background-color: var(--orange-color);
+  opacity: .7;
+  -webkit-transition: .5s;
+  transition: .5s;
+}
+
+.resume__img:hover, .resume__img:focus {
+  opacity: 0.7;
+  -webkit-transition: .5s;
+  transition: .5s;
+}
+
+@media (max-width: 480px) {
+  .resume {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: reverse;
+        -ms-flex-direction: column-reverse;
+            flex-direction: column-reverse;
+    text-align: center;
+    max-width: 330px;
+    padding: 0 15px 60px;
+    margin: 0 auto;
+  }
+}
+
+@media (min-width: 480px) and (max-width: 899px) {
+  .resume {
+    padding: 0 15px;
+  }
+}
+/*# sourceMappingURL=resume.css.map */

@@ -1,0 +1,123 @@
+.background {
+  background-color: #EDF7FA;
+  margin: 0 auto;
+  padding-bottom: 32px;
+}
+
+.posts {
+  width: 74%;
+  margin: 0 auto;
+}
+
+.posts__content {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  gap: 20px;
+}
+
+.posts-navigation__title {
+  font-size: 22px;
+  line-height: 60px;
+  margin: 0;
+}
+
+.posts__item {
+  background-color: #FFF;
+  padding: 24px 21px 35px 23px;
+  -ms-flex-item-align: center;
+      -ms-grid-row-align: center;
+      align-self: center;
+  -ms-grid-column-align: center;
+      justify-self: center;
+}
+
+.posts__desc {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: start;
+  -webkit-box-align: baseline;
+      -ms-flex-align: baseline;
+          align-items: baseline;
+  margin: 0;
+  margin-bottom: 11px;
+}
+
+.posts__date {
+  margin: 0;
+  margin-right: 60px;
+  position: relative;
+}
+
+.posts__type {
+  margin: 0;
+}
+
+.posts__date::after {
+  display: block;
+  content: "";
+  position: absolute;
+  width: 1px;
+  height: 21px;
+  background-color: #000;
+  top: 2px;
+  left: 120px;
+}
+
+.posts__text {
+  margin: 0;
+}
+
+.posts-navigation {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: baseline;
+      -ms-flex-align: baseline;
+          align-items: baseline;
+}
+
+.posts-navigation__link {
+  color: #00A8CC;
+}
+
+.posts-navigation__link:hover, .posts-navigation__link:focus {
+  opacity: .7;
+}
+
+@media (max-width: 480px) {
+  .posts {
+    width: 94%;
+  }
+  .posts__content {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .posts__date::after {
+    left: 115px;
+  }
+  .posts-navigation__link {
+    display: none;
+  }
+  .posts-navigation {
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  .posts-navigation__title {
+    font-size: 18px;
+    font-weight: 500;
+  }
+}
+/*# sourceMappingURL=posts.css.map */

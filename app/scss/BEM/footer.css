@@ -1,0 +1,29 @@
+.footer-navigation__list {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  gap: 35px;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  margin-bottom: 26px;
+}
+
+.footer-navigation__svg:hover path,
+.footer-navigation__svg:focus path {
+  fill: var(--orange-color);
+  -webkit-transition: .3s;
+  transition: .3s;
+}
+
+.footer__copyright {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  gap: 5px;
+  padding-bottom: 54px;
+}
+/*# sourceMappingURL=footer.css.map */
